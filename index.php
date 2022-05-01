@@ -16,8 +16,8 @@ spl_autoload_register(function ($class) {
     }
 });
 
-session_startl();
-
 
 $router = new Router;
 $db = new Db;
+
+$router -> run();

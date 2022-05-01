@@ -5,9 +5,28 @@ namespace application\core;
 
 class Router
 {
+
+    protected $routes = [];
+    protected $params = [];
+
     function __construct()
     {
-        echo 'Im class';
+       //
+    }
+
+    public function add()
+    {
+
+    }
+
+    public function match()
+    {
+
+    }
+
+    public function run()
+    {
+        echo 'Start';
     }
 }
 
