@@ -5,13 +5,21 @@ use \Core\Controller;
 
 class PageController extends Controller
 {
-    public function show1()
+    private $pages;
+
+    public function __construct()
     {
-        echo '1';
+        $this->pages = [
+            1 => 'страница 1',
+            2 => 'страница 2',
+            3 => 'страница 3',
+        ];
     }
 
-    public function show2()
+    public function show($params)
     {
-        echo '2';
+        // здесь выведем страницу с определенным номером
+        var_dump($params);
+        echo $this->pages[ $params['id'] ];
     }
 }
