@@ -63,6 +63,7 @@ class ProductController extends Controller
 
     public function all()
     {
+        $this->title = 'Hello';
         return $this->render('product/all', [
             'products' => $this->products,
         ]);
